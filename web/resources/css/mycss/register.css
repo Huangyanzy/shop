@@ -1,0 +1,165 @@
+html, body {
+	margin: 0;	
+	height: 100%;
+	font-family: '微软雅黑', 'Helvetica Neue', sans-serif, SimHei;	
+}
+/* 阴影 */
+#shadow {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.35);
+}
+/* 登录按钮 */
+#log_btn {
+	position: absolute;
+	right: 20px;
+	top: 15px;
+}
+/* 注册表单 */
+#reg_form {
+    position: absolute;
+    left: 50%;
+    top: 12%;
+    margin-left: -210px;
+    border-radius: 8px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+    background-color: rgba(255, 255, 255, 0.5)
+}
+#reg_btn {
+    float: right;
+}
+/* 输入框大小 */
+.form-group {
+    width: 220px;
+}
+/* 必填字段 */
+.required {
+	color: red;
+}
+/* Supersized - Fullscreen Slideshow jQuery Plugin  Version : 3.2.7 */
+* {
+	margin: 0;
+	padding: 0
+}
+
+body {
+	background: #111;
+	height: 100%
+}
+
+img {
+	border: none
+}
+
+#supersized-loader {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	z-index: 0;
+	width: 60px;
+	height: 60px;
+	margin: -30px 0 0 -30px;
+	text-indent: -999em;
+}
+
+#supersized {
+	display: block;
+	position: fixed;
+	left: 0;
+	top: 0;
+	overflow: hidden;
+	z-index: -999;
+	height: 100%;
+	width: 100%
+}
+
+#supersized img {
+	width: auto;
+	height: auto;
+	position: relative;
+	display: none;
+	outline: 0;
+	border: none
+}
+
+#supersized.speed img {
+	-ms-interpolation-mode: nearest-neighbor;
+	image-rendering: -moz-crisp-edges
+}
+
+#supersized.quality img {
+	-ms-interpolation-mode: bicubic;
+	image-rendering: optimizeQuality
+}
+
+#supersized li {
+	display: block;
+	list-style: none;
+	z-index: -30;
+	position: fixed;
+	overflow: hidden;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #111
+}
+
+#supersized a {
+	width: 100%;
+	height: 100%;
+	display: block
+}
+
+#supersized li.prevslide {
+	z-index: -20
+}
+
+#supersized li.activeslide {
+	z-index: -10
+}
+
+#supersized li.activeslide img, #supersized li.prevslide img {
+	display: inline
+}
+
+#supersized img {
+	max-width: none !important
+}
+
+.box-line {
+	height: 0;
+	overflow: hidden;
+	border-top: 1px #c2c2c2 solid;
+	margin-top: 20px;
+}
+
+.register-tis {
+	line-height: 42px;
+	margin: 15px auto 0px;
+	padding: 0 15px;
+	border: 1px solid rgba(255, 255, 255, 0.38);
+	background: rgba(45, 45, 45, 0.33);
+	border-radius: 6px;
+}
+
+label.error {
+	display: block;
+	-webkit-transition: border-color .15s ease-in-out, box-shadow .15s
+		ease-in-out;
+	transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+	border-radius: 0px 0px 5px 5px;
+	width: 340px;
+	height: 34px;
+	border: 1px solid rgba(255, 255, 255, .15);
+	line-height: 31px;
+	box-shadow: 0 2px 3px 0 rgba(0, 0, 0, .1) inset;
+	text-shadow: 0 1px 2px rgba(0, 0, 0, .1);
+	background: rgba(245, 26, 26, 0.81);
+	-moz-border-radius: 6px;
+	margin: 0 auto;
+}

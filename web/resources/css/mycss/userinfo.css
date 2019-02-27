@@ -1,0 +1,23 @@
+@CHARSET "UTF-8";
+
+/* 个人信息表单*/
+#userinfo {
+	width: 700px;
+	float: left;
+	margin-top: 50px;
+}
+/* 头像上传*/
+#avatar {
+	text-align: center;
+	float: left;
+	margin: 100px auto auto 50px;
+}
+/*  缩略图*/
+#avatar .thumbail {
+	width: 100px;
+	height: 100px;
+	display: block;
+	margin: 0 auto 10px auto;
+	padding: 4px;
+	border: 1px solid #ddd;
+}

@@ -1,0 +1,156 @@
+@CHARSET "UTF-8";
+
+html, body {
+	margin: 0px;
+	height: 100%;
+	font-family: '微软雅黑', 'Helvetica Neue', sans-serif, SimHei;
+}
+
+.icon_refresh {
+	position: absolute;
+	z-index: 1;
+	top: 63px;
+	right: 20px;
+}
+
+.icon_refresh:hover {
+	cursor: pointer;
+}
+/* 整个水平布局 */
+#vertical {
+	height: 100%;
+	margin: 0 atuo;
+	border: 0;
+}
+/* 上面板 */
+#top-pane {
+	background-color: rgb(51, 55, 69);
+	margin: 0 auto;
+	color: #FFFFFF;
+}
+/* 下面板 */
+#bottom-pane {
+	height: 100%;
+}
+/* 垂直布局 */
+#horizontal {
+	height: 100%;
+	background-color: #F1F1F1;
+}
+/* 标题面板 */
+#title-bar {
+	float: left;
+	margin-left: 10px;
+	margin-top: 7px;
+}
+/* 标题字体 */
+#logo_tile {
+	margin-left: 5px;
+}
+/* 搜索框 */
+#search {
+	float: left;
+	border: 0;
+	margin-top: 8px;
+	margin-left: 5%;
+	width: 17%;
+}
+/* 状态面板 */
+#state-bar {
+	float: right;
+	margin-right: 25px;
+	margin-top: 5px;
+}
+/* 用户头像 */
+#upic {
+	width: 40px;
+	height: 40px;
+	margin-right: 5px;
+}
+/* 注销 */
+#logout {
+	color: #FFFFFF;
+	font-size: 10px;
+	margin-left: 70px;
+	text-decoration: none;
+}
+/* 选项卡*/
+#tablist span {
+	color: #333;
+}
+/* iframe*/
+iframe {
+	height: 800px;
+	width: 100%;
+}
+/* 关闭选项卡*/
+.glyphicon-remove {
+	top: 2px;
+	margin-right: 10px;
+}
+/* 关闭选项卡悬停*/
+.glyphicon-remove:hover {
+	color: red !important;
+	cursor: pointer;
+}
+
+.dropdown-header {
+	border-width: 0 0 1px 0;
+	text-transform: uppercase;
+}
+
+.dropdown-header>span {
+	display: inline-block;
+	padding: 10px;
+}
+
+.dropdown-header>span:first-child {
+	width: 50px;
+}
+
+#search-input-list .k-item {
+	line-height: 1em;
+	/* min-width: 300px; */
+}
+
+/* Material Theme padding adjustment*/
+.k-material #search-input-list .k-item, .k-material #search-input-list .k-item.k-state-hover,
+	.k-materialblack #search-input-list .k-item, .k-materialblack #search-input-list .k-item.k-state-hover
+	{
+	padding-left: 5px;
+	border-left: 0;
+}
+
+#search-input-list .k-item>span {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	display: inline-block;
+	vertical-align: top;
+	margin: 20px 10px 10px 5px;
+}
+
+#search-input-list .k-item>span:first-child {
+	-moz-box-shadow: inset 0 0 30px rgba(0, 0, 0, .3);
+	-webkit-box-shadow: inset 0 0 30px rgba(0, 0, 0, .3);
+	box-shadow: inset 0 0 30px rgba(0, 0, 0, .3);
+	margin: 10px;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+#search-input-list h3 {
+	font-size: 1.2em;
+	font-weight: normal;
+	margin: 0 0 1px 0;
+	padding: 0;
+}
+
+#search-input-list p {
+	margin: 0;
+	padding: 0;
+	font-size: .8em;
+}

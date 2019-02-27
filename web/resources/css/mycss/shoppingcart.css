@@ -1,0 +1,187 @@
+@CHARSET "UTF-8";
+
+.top_bar {
+	padding: 10px;
+	width: 850px;
+	font: 12px/1.5 tahoma, arial, 'Hiragino Sans GB', \5b8b\4f53, sans-serif;
+}
+
+.top_allsel {
+	display: inline-block;
+	width: 100px;
+}
+
+input[type="checkbox"] {
+	margin-right: 8px;
+	position: relative;
+	top: 2px;
+}
+
+.top_cominfo {
+	display: inline-block;
+	width: 200px;
+}
+
+.top_price {
+	display: inline-block;
+	width: 150px;
+}
+
+.top_num {
+	display: inline-block;
+	width: 150px;
+	padding-left: 15px;
+}
+
+.top_total {
+	display: inline-block;
+	width: 150px;
+	padding-left: 8px;
+}
+
+.top_op {
+	display: inline-block;
+	width: 50px;
+}
+
+.outer {
+	width: 850px;
+	padding: 10px 0 10px 10px;
+	margin-bottom: 10px;
+	font: 12px/1.5 tahoma, arial, 'Hiragino Sans GB', \5b8b\4f53, sans-serif;
+}
+
+.seller_info {
+	margin-bottom: 10px;
+}
+
+.item_outer {
+	padding: 20px 10px 10px 10px;
+	border: 1px solid #e7e7e7;
+	background-color: rgb(252, 252, 252);
+}
+
+.item_content {
+	margin-bottom: 10px;
+}
+
+.item_onesel {
+	display: inline-block;
+	width: 30px;
+}
+
+.item_pic {
+	display: inline-block;
+}
+
+.item_pic img {
+	height: 80px;
+	width: 80px;
+}
+
+.item_info {
+	display: inline-block;
+	width: 160px;
+	margin-left: 15px;
+}
+
+.item_price {
+	display: inline-block;
+	width: 150px;
+	padding-left: 15px;
+	font-weight: 700;
+}
+
+.item_num {
+	display: inline-block;
+	width: 150px;
+	padding-left: 5px;
+}
+
+.item_op a {
+	color: #3c3c3c;
+}
+
+.item_op a:hover {
+	color: #f40;
+	cursor: pointer;
+}
+
+span.k-widget.k-numerictextbox {
+	width: 60px;
+}
+
+.item_total {
+	display: inline-block;
+	width: 150px;
+	padding-left: 10px;
+	color: #f40;
+	font-weight: 700;
+}
+
+.item_op {
+	display: inline-block;
+	width: 50px;
+}
+
+.bottom_bar {
+	position: relative;
+	width: 850px;
+	background: #e5e5e5;
+	padding: 10px;
+	font: 12px/1.5 tahoma, arial, 'Hiragino Sans GB', \5b8b\4f53, sans-serif;
+	width: 850px;
+}
+
+.bottom_allsel {
+	display: inline-block;
+}
+
+.bottom_del {
+	display: inline-block;
+	margin-left: 20px;
+	margin-right: 420px;
+}
+
+.bottom_del a {
+	color: #3c3c3c;
+}
+
+.bottom_del a:hover {
+	color: #f40;
+	cursor: pointer;
+}
+
+.bottom_selected {
+	display: inline-block;
+	margin-right: 40px;
+}
+
+.bottom_selected span {
+	color: #f40;
+	font-weight: 700;
+	font-size: 18px;
+	font-family: tohoma, arial;
+}
+
+.bottom_total {
+	display: inline-block;
+}
+
+.bottom_total span {
+	color: #f40;
+	font-weight: 700;
+	font-size: 18px;
+	font-family: tohoma, arial;
+}
+
+.bottom_btn {
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.content-pane>.content {
+	font-family: 'Helvetica Neue', Helvetica, 'Microsoft Yahei',
+		'Hiragino Sans GB', 'WenQuanYi Micro Hei', sans-serif;
+}

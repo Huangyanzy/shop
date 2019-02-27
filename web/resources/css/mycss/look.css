@@ -1,0 +1,190 @@
+@CHARSET "UTF-8";
+
+#listView {
+	padding: 10px 5px;
+	margin-bottom: -1px;
+	min-height: 510px;
+}
+
+.product {
+	float: left;
+	position: relative;
+	width: 111px;
+	height: 170px;
+	margin: 0 5px;
+	padding: 0;
+}
+
+.product img {
+	width: 110px;
+	height: 110px;
+}
+
+.product h3 {
+	margin: 0;
+	padding: 3px 5px 0 0;
+	max-width: 96px;
+	overflow: hidden;
+	/* 	    line-height: 1.1em; */
+	font-size: .9em;
+	font-weight: normal;
+	text-transform: uppercase;
+	color: #999;
+}
+
+.product p {
+	visibility: hidden;
+}
+
+.product:hover p {
+	visibility: visible;
+	position: absolute;
+	width: 110px;
+	height: 110px;
+	top: 0;
+	margin: 0;
+	padding: 0;
+	line-height: 110px;
+	vertical-align: middle;
+	text-align: center;
+	color: #fff;
+	background-color: rgba(0, 0, 0, 0.75);
+	transition: background .2s linear, color .2s linear;
+	-moz-transition: background .2s linear, color .2s linear;
+	-webkit-transition: background .2s linear, color .2s linear;
+	-o-transition: background .2s linear, color .2s linear;
+}
+
+.k-listview:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+/* 模态框 */
+.modal-content {
+	height: 500px;
+	background: rgba(255, 255, 255, 0.9);
+}
+
+.modal_pic {
+	height: 240px;
+	position: relative;
+}
+
+.modal_pic div {
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 50px;
+	padding: 15px;
+	width: 180px;
+	height: 180px;
+	border: 1px solid #B1B1B1;
+}
+
+.modal_pic img {
+	width: 150px;
+	height: 150px;
+}
+
+.modal_name {
+	text-align: center;
+}
+
+.modal_name div {
+	margin-left: auto;
+	margin-right: auto;
+	width: 180px;
+	/* text-align: left; */
+}
+
+.modal_name span {
+	word-wrap: break-word;
+	word-break: normal;
+	color: rgb(51, 102, 204);
+	font-family: tahoma, arial, 'Hiragino Sans GB', 宋体, sans-serif;
+	font-size: 12px;
+}
+
+.modal_info {
+	text-align: center;
+	margin-top: 15px;
+}
+
+.modal_info>div {
+	margin-left: auto;
+	margin-right: auto;
+	width: 180px;
+	height: 20px;
+	margin-bottom: 15px;
+}
+
+.modal_info1 {
+	float: left;
+}
+
+.modal_info1 .symbol {
+	color: rgb(153, 153, 153);
+}
+
+.modal_info1 #modal_price {
+	color: rgb(255, 68, 0);
+	font-family: verdana, arial;
+	font-size: 12px;
+}
+
+.modal_info2 {
+	float: right;
+	color: rgb(102, 102, 102);
+	font-family: tahoma, arial, 'Hiragino Sans GB', 宋体, sans-serif;
+	font-size: 12px;
+}
+
+.modal_btn {
+	text-align: center;
+}
+
+.modal_btn div {
+	margin-left: auto;
+	margin-right: auto;
+	width: 180px;
+	text-align: center;
+}
+
+.modal_btn .left {
+	font-size: 10px;
+	margin-bottom: 15px;
+	width: 100px;
+	font-family: 'Helvetica Neue', Helvetica, 'Microsoft Yahei',
+		'Hiragino Sans GB', 'WenQuanYi Micro Hei', sans-serif;
+}
+
+.modal_btn .right {
+	width: 100px;
+	font-size: 10px;
+	font-family: 'Helvetica Neue', Helvetica, 'Microsoft Yahei',
+		'Hiragino Sans GB', 'WenQuanYi Micro Hei', sans-serif;
+}
+
+.content-pane>.content {
+	font-family: 'Helvetica Neue', Helvetica, 'Microsoft Yahei',
+		'Hiragino Sans GB', 'WenQuanYi Micro Hei', sans-serif;
+}
+
+.modal_num {
+    text-align: center;
+    font-size: 10px;
+    font-family: 'Helvetica Neue', Helvetica, 'Microsoft Yahei', 'Hiragino Sans GB', 'WenQuanYi Micro Hei', sans-serif;
+    margin-bottom: 15px;
+}
+
+span.k-widget.k-numerictextbox {
+    width: 60px;
+}
+

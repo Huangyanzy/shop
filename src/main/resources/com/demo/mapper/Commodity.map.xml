@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper	namespace="com.demo.model.Commodity">
+
+	<sql id="TableName">
+		commodity
+	</sql>
+	
+	<sql id="commodityColumns">
+		comname,price,stock,description,compic,sold,sellerid
+	</sql>
+
+	<!-- 通过卖家ID找到商品 -->
+	<select id="selCommodityBySid" parameterType="java.lang.Integer" resultType="com.demo.model.Commodity">	
+		select * from <include refid="TableName" /> where sellerid=#{sid}
+	</select>
+	
+	<!-- 更新商品 -->
+	<update id="updateCommodity" parameterType="com.demo.model.Commodity">
+		update <include refid="TableName" /> set
+			comname=#{comname},
+			price=#{price},
+			stock=#{stock},
+			description=#{description},
+			compic=#{compic},
+			sold=#{sold}			
+		where comid=#{comid}
+	</update>
+	
+	<!-- 添加新商品 -->
+	<insert id="createCommodity" parameterType="com.demo.model.Commodity">	
+		insert into <include refid="TableName" />
+		(<include refid="commodityColumns" />) 
+		values 
+		(
+			#{comname},
+			#{price},
+			#{stock},
+			#{description},
+			#{compic},
+			#{sold},
+			#{sellerid}
+		)
+	</insert>
+	
+	<!-- 删除商品 -->
+	<delete id="deleteCommodity" parameterType="java.lang.Integer">
+		delete from <include refid="TableName" /> where comid=#{comid} 
+	</delete>	
+	
+	<!-- 查找所有商品 -->
+	<select id="selAllCommodity" resultType="com.demo.model.Commodity">
+		select * from <include refid="TableName" />
+	</select>
+	
+	
+	<!-- 通过商品id查找商品信息 -->
+	<select id="selCommodityById" parameterType="java.lang.Integer" resultType="com.demo.model.Commodity">
+		select * from <include refid="TableName" /> where comid=#{comid}
+	</select>
+	
+	<!-- 返回商品已售数量 -->
+	<select id="getSold" parameterType="java.lang.Integer" resultType="java.lang.Integer">
+		select sold from <include refid="TableName" /> where comid=#{comid}
+	</select>
+	
+	<!-- 更新已售数量 -->
+	<update id="updateSold" parameterType="java.util.Map">
+		update <include refid="TableName" /> set sold=#{sold} where comid=#{comid} 
+	</update>
+	
+	<!-- 浏览界面搜索商品 -->
+	<select id="searchForLookPg" parameterType="java.lang.String" resultType="com.demo.model.Commodity">
+		select * from <include refid="TableName" /> where comname like "%"#{comname}"%"
+	</select>
+	
+	<!-- 卖家管理界面搜索商品 -->
+	<select id="searchForComPg" parameterType="java.util.Map" resultType="com.demo.model.Commodity">
+		select * from <include refid="TableName" /> where sellerid=#{sellerid} and comname like "%"#{comname}"%"
+	</select>	
+	
+</mapper>
